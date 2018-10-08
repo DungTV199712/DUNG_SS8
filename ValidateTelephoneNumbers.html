@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ValidateTelephoneNumbers(str) {
+        const regexp = /^[0-9]{2}(?:-[0-9]{10})?$/;
+        if (regexp.test(str)){
+            console.log("Telephone number is accept");
+        }else
+            console.log("Telephone number is not accept");
+    }
+    ValidateTelephoneNumbers('016452400333');
+    ValidateTelephoneNumbers('84-0978489648')
+</script>
+</body>
+</html>

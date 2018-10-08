@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ValidateNameClass(str) {
+        const regexp = /^[CAP]+[0-9]{4}[GHIKLM]$/;
+        if (regexp.test(str)){
+            console.log("Name is accept");
+        } else
+            console.log("Name is not accept");
+    }
+    ValidateNameClass('C0318G');
+    ValidateNameClass('M0318G');
+    ValidateNameClass("P0323A");
+    ValidateNameClass("A0235H");
+</script>
+</body>
+</html>
