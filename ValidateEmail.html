@@ -7,7 +7,7 @@
 <body>
 <script>
     function ValidateEmail(str) {
-        var regexp = /^[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        var regexp = /^[A-Za-z0-9]+ *@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
         if (regexp.test(str)) {
             console.log("Email is accept")
         } else {
