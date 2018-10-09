@@ -7,7 +7,7 @@
 <body>
 <script>
     function ValidateTelephoneNumbers(str) {
-        const regexp = /^[0-9]{2}(?:-[0-9]{10})?$/;
+        const regexp = /^[0-9]{2}(?:-[0][0-9]{9})?$/;
         if (regexp.test(str)){
             console.log("Telephone number is accept");
         }else
